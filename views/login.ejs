@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Login Up</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <form class="loginform" method="POST" action="/login">
+    
+    <%if(message){%>
+        <p id="msg"><%=message%></p>
+    <%}%>
+    <input id="uemail" type="text" name="email" placeholder="Enter your email"/>
+    <input id="upass" type="password" name="password" placeholder="Enter your password"/>
+    <div class="container">
+      <button type="submit" name="submit" onclick="return validate()">Sign Up</button>
+    </div>
+  </form>
+  <script src="JS/login.scripts.js"></script>
+</body>
+</html>

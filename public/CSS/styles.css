@@ -1,0 +1,47 @@
+.signupform{
+    margin: 10rem auto;
+    padding: 20px;
+    width: 15rem;
+    height: auto;
+    gap: 20px;
+    background-color: #bdfffd;
+    border-radius: 20px;
+}
+
+.loginform{
+    margin: 10rem auto;
+    padding: 20px;
+    width: 15rem;
+    height: auto;
+    gap: 20px;
+    background-color: #bdfffd;
+    border-radius: 20px;
+}
+
+* > p{
+    margin: 2px auto;
+    color: red;
+}
+
+* > input{
+    padding: 5px;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+} 
+
+.container{
+    position: relative;
+}
+
+.container > button{
+    width: 5rem;
+    height: auto;
+    padding: 2px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
