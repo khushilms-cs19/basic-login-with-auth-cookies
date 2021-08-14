@@ -12,7 +12,7 @@ async function findInDB(req,res){
     const user = await users.findOne({email: creds.email});
     if(!user){
         res.render("login",{message: "*email or password in wrong."});
-        res.cookie("JWT_token",null,{
+        res.cookie("JWT_token","null",{
             expiresIn: 1000,
             httpOnly: true,
         })
