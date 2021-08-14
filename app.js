@@ -6,7 +6,6 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
-
 //data controllers.
 
 const {addToDB} = require("./models/addData");
